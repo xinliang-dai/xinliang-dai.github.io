@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Xinliang.jpg"
+  avatar           : "Xinliang.jpg" # e.g. "avatar.png" or "logo.svg"
   name             : "Xinliang Dai"
   pronouns         : # example: "she/her"  
   bio              : "Xinliang Dai is currently working toward a Ph.D degree with the Optimization and Control group in the Institute for Automation and Applied Informatics (IAI) at Karlsruhe Institute of Technology (KIT). His research interests include distributed optimization, cooperative decision-making, optimization and control of energy systems."
@@ -36,7 +36,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0001-8669-7942"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : "https://www.researchgate.net/profile/Xinliang-Dai"
   scopus           : # URL
 
