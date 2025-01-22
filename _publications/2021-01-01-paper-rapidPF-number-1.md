@@ -6,7 +6,7 @@ permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2021-06
 venue: 'Sustainable Energy, Grids and Networks'
-#slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
+slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://doi.org/10.1016/j.segan.2021.100471'
 citation: 'Mühlpfordt, Tillmann, Xinliang Dai, Alexander Engelmann, and Veit Hagenmeyer. "Distributed power flow and distributed optimization—formulation, solution, and open source implementation." Sustainable Energy, Grids and Networks 26 (2021): 100471.'
 ---
