@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Xinliang Dai"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -21,10 +21,12 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Xinliang.jpg" # e.g. "avatar.png" or "logo.svg"
+  avatar           : "profile.png" # e.g. "avatar.png" or "logo.svg"
   name             : "Xinliang Dai"
   pronouns         : # example: "she/her"  
-  bio              : "Xinliang Dai is currently working toward a Ph.D degree with the Optimization and Control group in the Institute for Automation and Applied Informatics (IAI) at Karlsruhe Institute of Technology (KIT). His research interests include distributed optimization, cooperative decision-making, optimization and control of energy systems."
+  bio              : "Xinliang Dai is currently working toward a Ph.D degree with the Optimization and Control group in the Institute for Automation and Applied Informatics (IAI) at Karlsruhe Institute of Technology (KIT). 
+  
+  His research interests include distributed optimization, cooperative decision-making, optimization and control of energy systems."
   location         : "Karlsruhe, Germany"
   employer         : "Karlsruhe Institute of Technology"
   uri              : # URL
@@ -130,7 +132,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : 
 facebook:
   username               :
   app_id                 :
