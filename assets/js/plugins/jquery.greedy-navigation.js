@@ -10,13 +10,22 @@ function closeNavigation() {
   $btn.removeClass('close').attr('aria-expanded', 'false');
 }
 
+function navigationOverflows() {
+  var list = $vlinks[0];
+  var bounds = list.getBoundingClientRect();
+  // Right alignment can overflow to the left without increasing scrollWidth.
+  return list.scrollWidth > list.clientWidth + 1 ||
+    list.firstElementChild.getBoundingClientRect().left < bounds.left - 1 ||
+    list.lastElementChild.getBoundingClientRect().right > bounds.right + 1;
+}
+
 function updateNav() {
   $nav.addClass('js-nav');
   // Restore the original order before measuring; widths change with font loading.
   $hlinks.children().insertBefore($tail);
   $btn.addClass('hidden');
   $vlinks.css('width', $nav.width());
-  while ($vlinks[0].scrollWidth > $vlinks[0].clientWidth + 1 &&
+  while (navigationOverflows() &&
          $vlinks.children(':not(.persist)').length) {
     $btn.removeClass('hidden');
     $vlinks.css('width', $nav.width() - $btn.outerWidth() - 16);

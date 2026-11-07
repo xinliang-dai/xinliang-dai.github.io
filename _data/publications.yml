@@ -1,7 +1,63 @@
 # DOI links lead to the published version; arXiv links are included only when verified.
-# Years refer to the final journal issue or conference year.
+# Published years refer to the final journal issue or conference year.
+# Working-paper years refer to the first public arXiv version.
+# Set selected to true to include an entry on the publications page.
+
+- id: r3
+  category: working
+  selected: true
+  title: "DistFlow and Its Conic Relaxation: Regularity, Monotonicity, and Hybrid Exactness via Graph Decomposition"
+  authors:
+    - Xinliang Dai
+  venue: "Preprint"
+  year: 2026
+  arxiv: "https://arxiv.org/abs/2610.41220"
+
+- id: r1
+  category: working
+  selected: true
+  title: "Distributed coordination for transmission-distribution systems with nonlinear flexibility aggregation"
+  authors:
+    - Xinliang Dai
+    - Yanlin Jiang
+    - Frederik Zahn
+    - Yi Guo
+    - Veit Hagenmeyer
+  venue: "Preprint"
+  year: 2026
+  arxiv: "https://arxiv.org/abs/2608.06341"
+
+- id: r5
+  category: working
+  selected: true
+  title: "Analyzing Performance and Scalability of Benders Decomposition for Generation and Transmission Expansion Planning Models"
+  authors:
+    - David L. Cole
+    - Michael Lau
+    - Xinliang Dai
+    - Sambuddha Chakrabarti
+    - Jesse D. Jenkins
+  venue: "Preprint"
+  year: 2026
+  arxiv: "https://arxiv.org/abs/2603.29867"
+
+- id: r2
+  category: working
+  selected: true
+  title: "Distributed AC Optimal Power Flow: A Scalable Solution for Large-Scale Problems"
+  authors:
+    - Xinliang Dai
+    - Yuning Jiang
+    - Yi Guo
+    - Colin N. Jones
+    - Moritz Diehl
+    - Veit Hagenmeyer
+  venue: "Preprint"
+  year: 2025
+  arxiv: "https://arxiv.org/abs/2503.24086"
 
 - id: j1
+  selected: true
   category: journal
   title: "Distributed convex second-order optimization for AC/DC hybrid distribution systems within PROcess Orchestration Framework"
   authors:
@@ -19,6 +75,7 @@
   arxiv: "https://arxiv.org/abs/2609.14004"
 
 - id: j3
+  selected: true
   category: journal
   title: "Optimal BESS management for peak load shaving and battery health under prediction uncertainty"
   authors:
@@ -36,6 +93,7 @@
   source_url: "https://publikationen.bibliothek.kit.edu/1000183390"
 
 - id: j2
+  selected: true
   category: journal
   title: "Advancing distributed AC optimal power flow for integrated transmission-distribution systems"
   authors:
@@ -51,6 +109,7 @@
   arxiv: "https://arxiv.org/abs/2308.13282"
 
 - id: j4
+  selected: false
   category: journal
   title: "Low-carbon energy management for networked multi-energy microgrids using multi-agent soft actor-critic algorithm"
   authors:
@@ -67,6 +126,7 @@
   source_url: "https://www.sciencedirect.com/science/article/abs/pii/S2352467725002036"
 
 - id: j5
+  selected: true
   category: journal
   title: "Real-time coordination of integrated transmission and distribution systems: Flexibility modeling and distributed NMPC scheduling"
   authors:
@@ -82,6 +142,7 @@
   arxiv: "https://arxiv.org/abs/2402.00508"
 
 - id: j6
+  selected: true
   category: journal
   title: "Ensuring data privacy in AC optimal power flow with a distributed co-simulation framework"
   authors:
@@ -100,6 +161,7 @@
   source_url: "https://www.sciencedirect.com/science/article/pii/S0378779624005960"
 
 - id: j7
+  selected: true
   category: journal
   title: "Distributed optimal power flow for VSC-MTDC meshed AC/DC grids using ALADIN"
   authors:
@@ -116,6 +178,7 @@
   arxiv: "https://arxiv.org/abs/2203.02796"
 
 - id: j8
+  selected: true
   category: journal
   title: "Distributed power flow and distributed optimization—Formulation, solution, and open source implementation"
   authors:
@@ -129,6 +192,7 @@
   arxiv: "https://arxiv.org/abs/2011.10322"
 
 - id: c1
+  selected: true
   category: conference
   title: "Error accumulation using linearized models for aggregating flexibility in distribution systems"
   authors:
@@ -143,6 +207,7 @@
   arxiv: "https://arxiv.org/abs/2508.04382"
 
 - id: c2
+  selected: true
   category: conference
   title: "Enhanced flexibility aggregation using LinDistFlow model with loss compensation"
   authors:
@@ -156,6 +221,7 @@
   arxiv: "https://arxiv.org/abs/2505.01715"
 
 - id: c3
+  selected: false
   category: conference
   title: "Shapley value-based cost allocation for battery energy storage systems in power grids with a high share of renewables"
   authors:
@@ -168,6 +234,7 @@
   doi: "https://doi.org/10.1145/3679240.3734664"
 
 - id: c4
+  selected: false
   category: conference
   title: "Real-time pricing mechanism for V2G using distributed bilevel optimization"
   authors:
@@ -182,6 +249,7 @@
   doi: "https://doi.org/10.1109/CDC56724.2024.10886533"
 
 - id: c5
+  selected: true
   category: conference
   title: "Industrial application of the Shapley value-based redispatch cost allocation to large-scale power grids requires AC optimal power flow"
   authors:
@@ -194,6 +262,7 @@
   arxiv: "https://arxiv.org/abs/2405.06439"
 
 - id: c6
+  selected: true
   category: conference
   title: "Hypergraph-based fast distributed AC power flow optimization"
   authors:
@@ -209,6 +278,7 @@
   source_url: "https://publikationen.bibliothek.kit.edu/1000168659"
 
 - id: c7
+  selected: false
   category: conference
   title: "A Shapley value-based distributed AC OPF approach for redispatch congestion cost allocation"
   authors:
@@ -220,6 +290,7 @@
   doi: "https://doi.org/10.1145/3575813.3576881"
 
 - id: c8
+  selected: true
   category: conference
   title: "Rapid scalable distributed power flow with open-source implementation"
   authors:

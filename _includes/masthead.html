@@ -5,17 +5,21 @@
       <nav id="site-nav" class="greedy-nav" aria-label="Main navigation">
         <button class="hidden" type="button" aria-label="More navigation links" aria-controls="overflow-navigation" aria-expanded="false"><span class="navicon"></span></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
+          {% unless page.url == '/' or page.url == '/index.html' %}
+          <li class="masthead__menu-item masthead__menu-item--lg persist">
             <a href="{{ base_path }}/" aria-label="{{ site.title }} — home">{{ site.masthead_title | default: site.title }}</a>
           </li>
+          {% endunless %}
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            {% assign current_link = false %}
+            {% if page.url == link.url %}{% assign current_link = true %}{% elsif page.url contains link.url and link.url != '/' %}{% assign current_link = true %}{% endif %}
+            <li class="masthead__menu-item {% if current_link %}selected{% endif %}">
+              <a href="{{ domain }}{{ link.url }}"{% if current_link %} aria-current="page"{% endif %}>{{ link.title }}</a>
             </li>
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">

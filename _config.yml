@@ -10,7 +10,7 @@
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Xinliang Dai"
-masthead_title           : "Xinliang"
+masthead_title           : "Xinliang DAI"
 title_separator          : "-"
 name                     : &name "Xinliang Dai"
 description              : &description "Xinliang Dai - optimization and computation for networked energy systems"

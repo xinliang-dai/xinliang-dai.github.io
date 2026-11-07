@@ -1,0 +1,117 @@
+# A talk can have several venues; keep each venue's date and host with that venue.
+# Hosts are confirmed by the CV, official event pages, or the author.
+# Months are included only where verified.
+- category: invited
+  year: 2026
+  title: "Fast maximum loadability screening for data center interconnections via AC feasibility recovery"
+  venues:
+    - institution: Argonne National Laboratory
+      unit: Advanced Grid Modeling, Optimization and Analytics group
+      host: Dr. Feng Qiu
+
+- category: invited
+  year: 2026
+  month: Aug
+  date: "2026-08"
+  title: "Two scalable distributed strategies for nonlinear optimization in power systems"
+  venues:
+    - institution: Georgia Institute of Technology
+      unit: AI Institute for Advances in Optimization (AI4OPT)
+      location: Atlanta, GA
+      host: Prof. Pascal Van Hentenryck
+      url: https://www.ai4opt.org/news-events/ai4opt-seminar-series-xinliang-dai
+
+- category: invited
+  year: 2026
+  title: "Distributed optimization frameworks for large-scale nonlinear programming in power systems"
+  venues:
+    - institution: The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)
+      date_label: Jan 26, 2026
+      date: "2026-01-26"
+      host: Prof. Li Qiu
+      url: https://ssemsc.cuhk.edu.cn/event/268
+    - institution: The Hong Kong Polytechnic University (PolyU)
+      date_label: Feb 3, 2026
+      date: "2026-02-03"
+      url: https://www.polyu.edu.hk/eee/news-and-events/events/2026/2026-02-03-research-talk-on-distributed-optimization-frameworks-for-large-scale-nonlinear/
+      host: Prof. Siqi Bu
+    - institution: City University of Hong Kong (CityU)
+      unit: Department of Data Science
+      date_label: Feb 4, 2026
+      date: "2026-02-04"
+      host: Prof. Zijun Zhang
+      url: https://www.ds.cityu.edu.hk/news-event/seminars/2526-semb/distributed-optimization-frameworks-for-large-scale-nonlinear-programming-in-power-systems
+    - institution: The University of Hong Kong (HKU)
+      host: Prof. Tao Liu
+    - institution: The Chinese University of Hong Kong (CUHK)
+      host: Prof. Jie Huang
+    - institution: The Hong Kong University of Science and Technology (Guangzhou)
+      host: Prof. Danny Tsang
+
+- category: invited
+  year: 2025
+  title: "Cooperative decision-making in power system operations"
+  venues:
+    - institution: Mines Paris-PSL
+      unit: Centre Automatique et Systèmes
+      location: Paris, France
+      host: Prof. François Pacaud
+
+- category: invited
+  year: 2023
+  month: Apr
+  date: "2023-04"
+  title: "Distributed optimization in the electric power system"
+  venues:
+    - institution: University of Freiburg
+      unit: Systems Control and Optimization Laboratory
+      location: Freiburg, Germany
+      host: Prof. Moritz Diehl
+      url: https://www.syscop.de/event/distributed-optimization-electric-power-system
+
+- category: invited
+  year: 2022
+  title: "Data-preserving calculations using distributed Gauss-Newton algorithms"
+  venues:
+    - institution: TransnetBW
+      location: Stuttgart, Germany
+      host: Dr. Jochen Bammert
+
+- category: conference
+  year: 2026
+  title: "DistFlow and its conic relaxation: regularity, monotonicity, and hybrid exactness via graph decomposition"
+  status: Accepted presentation
+  venues:
+    - institution: San Francisco
+
+- category: conference
+  year: 2025
+  month: Mar
+  date: "2025-03"
+  title: "Privacy-preserving flexibility provisioning approaches for enhanced TSO-DSO interaction"
+  venues:
+    - institution: "Inno-Forum: Digitale Energiewende, TransnetBW"
+      location: Stuttgart, Germany
+
+- category: conference
+  year: 2024
+  month: Jun
+  date: "2024-06"
+  title: "Real-time coordination of integrated transmission and distribution systems: flexibility modeling and distributed NMPC scheduling"
+  venues:
+    - institution: 23rd Power Systems Computation Conference (PSCC)
+      location: Paris, France
+
+- category: conference
+  year: 2023
+  title: "Hypergraph-based fast distributed AC power flow optimization"
+  venues:
+    - institution: 62nd IEEE Conference on Decision and Control (CDC)
+      location: Singapore
+
+- category: conference
+  year: 2022
+  title: "Rapid scalable distributed power flow with open-source implementation"
+  venues:
+    - institution: 9th IFAC Conference on Networked Systems (NECSYS)
+      location: Zurich, Switzerland

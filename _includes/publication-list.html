@@ -1,5 +1,5 @@
-{% assign publications = site.data.publications | where: 'category', include.category %}
-<ol class="publication-list">
+{% assign publications = site.data.publications | where: 'selected', true | where: 'category', include.category %}
+<ol class="publication-list{% unless include.category == 'working' %} publication-list--compact{% endunless %}">
   {% for paper in publications %}
   <li class="publication" id="{{ paper.id }}">
     <h3 class="publication__title">{{ paper.title | escape }}</h3>

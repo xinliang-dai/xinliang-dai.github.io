@@ -12,6 +12,7 @@ html[data-theme="dark"] {
 .greedy-nav .visible-links {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -34,6 +35,13 @@ html[data-theme="dark"] {
 .author__content .author__bio { margin: 0.6rem 0 0.25rem; }
 .author__content .author__institution { margin: 0 0 0.2rem; font-weight: 600; }
 .author__content .author__location { margin: 0; font-size: 0.7em; line-height: 1.5; }
+.author__content .author__institution,
+.author__content .author__location {
+  display: grid;
+  grid-template-columns: 1.25em minmax(0, 1fr);
+  gap: 0.35em;
+  align-items: baseline;
+}
 .author__urls-wrapper { margin-top: 1rem; }
 .author__urls-wrapper > button {
   color: var(--global-text-color);
@@ -60,11 +68,25 @@ html[data-theme="dark"] {
 .page__content .news-item__detail p { margin: 0; }
 .page__content .news-more { margin-top: 1rem; }
 
+/* Repeated seminar titles share one row; each stop keeps its own host/date. */
+.page__content .talk-item__title { margin: 0 0 0.5rem; font-size: 1em; line-height: 1.45; }
+.page__content .talk-venues { list-style: none; padding: 0; margin: 0; }
+.talk-venues .talk-venue { margin: 0; padding: 0; font-size: 0.9em; line-height: 1.5; }
+.talk-venues--multiple .talk-venue { padding: 0.5rem 0 0.5rem 0.8rem; border-left: 2px solid var(--global-border-color); }
+.talk-venue__name { font-weight: 600; }
+.talk-venue__date { font-size: 0.9em; font-weight: 400; white-space: nowrap; }
+.talk-venue__detail, .talk-venue__host { font-size: 0.93em; }
+.page__content .talk-item__status { font-size: 0.85em; font-style: italic; margin: 0 0 0.3rem; }
+
 /* Three-line bibliography: title, authors, venue/year with inline links. */
 .page__content .publication-list { list-style: none; padding: 0; margin: 0; }
 .publication-list .publication { padding: 1.2rem 0; border-bottom: 1px solid var(--global-border-color); }
 .publication-list .publication:first-child { padding-top: 0.3rem; }
 .publication-list .publication:last-child { border-bottom: 0; }
+.publication-list--compact .publication { padding: 0.75rem 0; }
+.page__content .publication-list--compact .publication__title { margin-bottom: 0.2rem; }
+.page__content .publication-list--compact .publication__authors { margin-bottom: 0.2rem; line-height: 1.4; }
+.page__content .publication-list--compact .publication__meta { line-height: 1.4; }
 .page__content .publication__title { margin: 0 0 0.35rem; font-size: 1em; line-height: 1.45; font-weight: 650; }
 .page__content .publication__authors { margin: 0 0 0.35rem; font-size: 0.88em; line-height: 1.55; }
 .publication__authors summary { cursor: pointer; list-style: none; }
