@@ -1,9 +1,10 @@
 # A talk can have several venues; keep each venue's date and host with that venue.
 # Hosts are confirmed by the CV, official event pages, or the author.
-# Months are included only where verified.
+# Months are included only where verified; otherwise date contains the year only.
 - category: invited
   year: 2026
   title: "Fast maximum loadability screening for data center interconnections via AC feasibility recovery"
+  date: "2026"
   venues:
     - institution: Argonne National Laboratory
       unit: Advanced Grid Modeling, Optimization and Analytics group
@@ -24,6 +25,7 @@
 - category: invited
   year: 2026
   title: "Distributed optimization frameworks for large-scale nonlinear programming in power systems"
+  date: "2026"
   venues:
     - institution: The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)
       date_label: Jan 26, 2026
@@ -51,6 +53,7 @@
 - category: invited
   year: 2025
   title: "Cooperative decision-making in power system operations"
+  date: "2025"
   venues:
     - institution: Mines Paris-PSL
       unit: Centre Automatique et Systèmes
@@ -72,6 +75,7 @@
 - category: invited
   year: 2022
   title: "Data-preserving calculations using distributed Gauss-Newton algorithms"
+  date: "2022"
   venues:
     - institution: TransnetBW
       location: Stuttgart, Germany
@@ -80,6 +84,7 @@
 - category: conference
   year: 2026
   title: "DistFlow and its conic relaxation: regularity, monotonicity, and hybrid exactness via graph decomposition"
+  date: "2026"
   status: Accepted presentation
   venues:
     - institution: San Francisco
@@ -105,6 +110,7 @@
 - category: conference
   year: 2023
   title: "Hypergraph-based fast distributed AC power flow optimization"
+  date: "2023"
   venues:
     - institution: 62nd IEEE Conference on Decision and Control (CDC)
       location: Singapore
@@ -112,6 +118,7 @@
 - category: conference
   year: 2022
   title: "Rapid scalable distributed power flow with open-source implementation"
+  date: "2022"
   venues:
     - institution: 9th IFAC Conference on Networked Systems (NECSYS)
       location: Zurich, Switzerland

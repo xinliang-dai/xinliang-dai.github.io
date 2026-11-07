@@ -1,11 +1,16 @@
-{% assign talks = site.data.talks | where: 'category', include.category %}
+{% assign talks = site.data.talks | sort: 'date' | reverse %}
+{% assign talk_years = talks | map: 'year' | uniq | sort | reverse %}
+{% for year in talk_years %}
+<section class="timeline-year" aria-labelledby="talk-year-{{ year }}">
+<h2 class="timeline-year__heading" id="talk-year-{{ year }}">{{ year }}</h2>
+{% assign year_talks = talks | where: 'year', year %}
 <ul class="news-list talk-list">
-  {% for talk in talks %}
+  {% for talk in year_talks %}
   <li class="news-item talk-item">
-    <div class="news-item__date">{% if talk.month %}<time datetime="{{ talk.date }}">{{ talk.month }} {{ talk.year }}</time>{% else %}{{ talk.year }}{% endif %}</div>
+    <div class="news-item__date"><time{% unless talk.month %} class="visually-hidden"{% endunless %} datetime="{{ talk.date }}">{% if talk.month %}{{ talk.month }}{% else %}{{ talk.year }}{% endif %}</time></div>
     <div class="news-item__detail">
+      <p class="talk-item__type">{% if talk.status %}{{ talk.status | escape }}{% elsif talk.category == 'invited' %}Invited talk{% else %}Presentation{% endif %}</p>
       <h3 class="talk-item__title">{{ talk.title | escape }}</h3>
-      {% if talk.status %}<p class="talk-item__status">{{ talk.status | escape }}</p>{% endif %}
       <ul class="talk-venues{% if talk.venues.size > 1 %} talk-venues--multiple{% endif %}">
         {% for venue in talk.venues %}
         <li class="talk-venue">
@@ -19,3 +24,5 @@
   </li>
   {% endfor %}
 </ul>
+</section>
+{% endfor %}

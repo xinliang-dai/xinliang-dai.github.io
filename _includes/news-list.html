@@ -1,10 +1,14 @@
 {% assign news_items = site.data.news %}
 {% if include.featured %}{% assign news_items = news_items | where: 'featured', true %}{% endif %}
-<ul class="news-list">
-  {% for item in news_items %}
-  <li class="news-item">
-    <div class="news-item__date">{% if item.month %}<time datetime="{{ item.date }}">{{ item.month }} {{ item.year }}</time>{% else %}{{ item.year }}{% endif %}</div>
-    <div class="news-item__detail">{{ item.details | markdownify }}</div>
-  </li>
+{% if include.group_by_year %}
+  {% assign news_years = news_items | map: 'year' | uniq | sort | reverse %}
+  {% for year in news_years %}
+  <section class="timeline-year" aria-labelledby="news-year-{{ year }}">
+    <h2 class="timeline-year__heading" id="news-year-{{ year }}">{{ year }}</h2>
+    {% assign year_items = news_items | where: 'year', year %}
+    {% include news-items.html items=year_items month_only=true %}
+  </section>
   {% endfor %}
-</ul>
+{% else %}
+  {% include news-items.html items=news_items %}
+{% endif %}

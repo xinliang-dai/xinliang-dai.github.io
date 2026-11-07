@@ -1,0 +1,8 @@
+<ul class="news-list">
+  {% for item in include.items %}
+  <li class="news-item">
+    <div class="news-item__date">{% if item.month %}<time datetime="{{ item.date }}">{{ item.month }}{% unless include.month_only %} {{ item.year }}{% endunless %}</time>{% elsif include.month_only %}<time class="visually-hidden" datetime="{{ item.year }}">{{ item.year }}</time>{% else %}{{ item.year }}{% endif %}</div>
+    <div class="news-item__detail">{{ item.details | markdownify }}</div>
+  </li>
+  {% endfor %}
+</ul>

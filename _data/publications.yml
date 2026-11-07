@@ -1,6 +1,7 @@
 # DOI links lead to the published version; arXiv links are included only when verified.
 # Published years refer to the final journal issue or conference year.
 # Working-paper years refer to the first public arXiv version.
+# Review statuses reflect the application CV supplied by the author.
 # Set selected to true to include an entry on the publications page.
 # Set featured to true to also highlight an entry on the homepage.
 
@@ -12,6 +13,8 @@
   authors:
     - Xinliang Dai
   venue: "Preprint"
+  review_venue: "Automatica"
+  review_status: "Under review"
   year: 2026
   arxiv: "https://arxiv.org/abs/2610.41220"
 
@@ -27,6 +30,8 @@
     - Yi Guo
     - Veit Hagenmeyer
   venue: "Preprint"
+  review_venue: "Automatica"
+  review_status: "Under 2nd-round review"
   year: 2026
   arxiv: "https://arxiv.org/abs/2608.06341"
 
@@ -42,6 +47,8 @@
     - Sambuddha Chakrabarti
     - Jesse D. Jenkins
   venue: "Preprint"
+  review_venue: "IEEE Transactions on Power Systems"
+  review_status: "Under review"
   year: 2026
   arxiv: "https://arxiv.org/abs/2603.29867"
 
@@ -57,6 +64,8 @@
     - Moritz Diehl
     - Veit Hagenmeyer
   venue: "Preprint"
+  review_venue: "IEEE Transactions on Power Systems"
+  review_status: "Under 3rd-round review"
   year: 2025
   arxiv: "https://arxiv.org/abs/2503.24086"
 
