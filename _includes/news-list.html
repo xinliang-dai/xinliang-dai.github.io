@@ -2,6 +2,9 @@
 {% if include.featured %}{% assign news_items = news_items | where: 'featured', true %}{% endif %}
 {% if include.group_by_year %}
   {% assign news_years = news_items | map: 'year' | uniq | sort | reverse %}
+  <nav class="timeline-index" aria-label="News by year">
+    {% for year in news_years %}<a href="#news-year-{{ year }}">{{ year }}</a>{% endfor %}
+  </nav>
   {% for year in news_years %}
   <section class="timeline-year" aria-labelledby="news-year-{{ year }}">
     <h2 class="timeline-year__heading" id="news-year-{{ year }}">{{ year }}</h2>

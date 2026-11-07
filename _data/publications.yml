@@ -9,7 +9,7 @@
   featured: true
   category: working
   selected: true
-  title: "DistFlow and Its Conic Relaxation: Regularity, Monotonicity, and Hybrid Exactness via Graph Decomposition"
+  title: "DistFlow and its conic relaxation: regularity, monotonicity, and hybrid exactness via graph decomposition"
   authors:
     - Xinliang Dai
   venue: "Preprint"
@@ -39,7 +39,7 @@
   featured: true
   category: working
   selected: true
-  title: "Analyzing Performance and Scalability of Benders Decomposition for Generation and Transmission Expansion Planning Models"
+  title: "Analyzing performance and scalability of Benders decomposition for generation and transmission expansion planning models"
   authors:
     - David L. Cole
     - Michael Lau
@@ -55,7 +55,7 @@
 - id: r2
   category: working
   selected: true
-  title: "Distributed AC Optimal Power Flow: A Scalable Solution for Large-Scale Problems"
+  title: "Distributed AC optimal power flow: a scalable solution for large-scale problems"
   authors:
     - Xinliang Dai
     - Yuning Jiang
@@ -142,7 +142,7 @@
 - id: j5
   selected: true
   category: journal
-  title: "Real-time coordination of integrated transmission and distribution systems: Flexibility modeling and distributed NMPC scheduling"
+  title: "Real-time coordination of integrated transmission and distribution systems: flexibility modeling and distributed NMPC scheduling"
   authors:
     - Xinliang Dai
     - Yi Guo
@@ -194,7 +194,7 @@
 - id: j8
   selected: true
   category: journal
-  title: "Distributed power flow and distributed optimization—Formulation, solution, and open source implementation"
+  title: "Distributed power flow and distributed optimization—formulation, solution, and open source implementation"
   authors:
     - Tillmann Mühlpfordt
     - Xinliang Dai

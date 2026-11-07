@@ -110,7 +110,9 @@
 - category: conference
   year: 2023
   title: "Hypergraph-based fast distributed AC power flow optimization"
-  date: "2023"
+  month: Dec
+  date: "2023-12"
+  source: https://cdc2023.ieeecss.org/
   venues:
     - institution: 62nd IEEE Conference on Decision and Control (CDC)
       location: Singapore
@@ -118,7 +120,9 @@
 - category: conference
   year: 2022
   title: "Rapid scalable distributed power flow with open-source implementation"
-  date: "2022"
+  month: Jul
+  date: "2022-07"
+  source: https://www.ifac-control.org/conferences/networked-systems-9th-necsys-2022
   venues:
     - institution: 9th IFAC Conference on Networked Systems (NECSYS)
       location: Zurich, Switzerland

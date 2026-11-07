@@ -1,10 +1,13 @@
 # Shared by the home page and /news/. Add a month only when it is known.
 # Within a year, dated items are newest first; year-only items follow them.
+# Activities are drawn from the application CV and author-confirmed details.
+# Announce publications from 2025 onward; earlier conference entries are talks.
+# Record ongoing appointments, projects, and mentoring at their starting year.
 - year: 2026
   month: Aug
   date: "2026-08"
   featured: true
-  details: 'Gave an [invited seminar at AI4OPT, Georgia Tech](https://www.ai4opt.org/news-events/ai4opt-seminar-series-xinliang-dai), on scalable distributed strategies for nonlinear optimization in power systems.'
+  details: 'Gave an [invited seminar at AI4OPT, Georgia Tech](https://www.ai4opt.org/news-events/ai4opt-seminar-series-xinliang-dai) on scalable distributed strategies for nonlinear optimization in power systems, hosted by Prof. Pascal Van Hentenryck.'
 
 - year: 2026
   month: Jul
@@ -16,8 +19,18 @@
 - year: 2026
   month: Feb
   date: "2026-02"
+  details: 'Gave an [invited seminar at City University of Hong Kong](https://www.ds.cityu.edu.hk/news-event/seminars/2526-semb/distributed-optimization-frameworks-for-large-scale-nonlinear-programming-in-power-systems) on distributed optimization in power systems, hosted by Prof. Zijun Zhang.'
+
+- year: 2026
+  month: Feb
+  date: "2026-02"
   featured: true
-  details: 'Gave an [invited talk at The Hong Kong Polytechnic University](https://www.polyu.edu.hk/eee/news-and-events/events/2026/2026-02-03-research-talk-on-distributed-optimization-frameworks-for-large-scale-nonlinear/) on distributed optimization frameworks for large-scale nonlinear programming in power systems.'
+  details: 'Gave an [invited talk at The Hong Kong Polytechnic University](https://www.polyu.edu.hk/eee/news-and-events/events/2026/2026-02-03-research-talk-on-distributed-optimization-frameworks-for-large-scale-nonlinear/) on distributed optimization in power systems, hosted by Prof. Siqi Bu.'
+
+- year: 2026
+  month: Jan
+  date: "2026-01"
+  details: 'Gave an [invited seminar at The Chinese University of Hong Kong, Shenzhen](https://ssemsc.cuhk.edu.cn/event/268) on distributed optimization in power systems, hosted by Prof. Li Qiu.'
 
 - year: 2026
   month: Jan
@@ -26,16 +39,31 @@
   source: https://publikationen.bibliothek.kit.edu/1000183390
 
 - year: 2026
-  details: 'Gave an invited seminar at Argonne National Laboratory on fast maximum-loadability screening for data center interconnections.'
+  details: 'Gave an invited seminar at Argonne National Laboratory on fast maximum-loadability screening for data center interconnections, hosted by Dr. Feng Qiu.'
 
 - year: 2026
-  details: 'Gave invited seminars at HKU, CUHK, CityU, CUHK-Shenzhen, and HKUST(GZ) on distributed optimization in power systems.'
+  details: 'Gave an invited seminar at The University of Hong Kong (HKU) on distributed optimization in power systems, hosted by Prof. Tao Liu.'
+
+- year: 2026
+  details: 'Gave an invited seminar at The Chinese University of Hong Kong (CUHK) on distributed optimization in power systems, hosted by Prof. Jie Huang.'
+
+- year: 2026
+  details: 'Gave an invited seminar at The Hong Kong University of Science and Technology (Guangzhou) on distributed optimization in power systems, hosted by Prof. Danny Tsang.'
 
 - year: 2026
   details: 'Served on the Posters Track Program Committee for ACM e-Energy.'
 
 - year: 2026
   details: 'Accepted to present work on DistFlow regularity, monotonicity, and hybrid exactness in San Francisco.'
+
+- year: 2026
+  details: 'Our paper on [error accumulation in linearized models for distribution-system flexibility aggregation](https://doi.org/10.1109/PESIM67009.2026.11438889) appeared in the proceedings of the IEEE PES International Meeting.'
+
+- year: 2026
+  details: 'Began co-mentoring Princeton doctoral researcher Jonah Langlieb with Prof. Jesse D. Jenkins on GPU-accelerated optimization for large-scale linear and mixed-integer models.'
+
+- year: 2026
+  details: 'Began mentoring Princeton undergraduate researcher Lillian Wang on sensitivity analysis for large-scale energy-system planning.'
 
 - year: 2025
   month: Sep
@@ -50,10 +78,33 @@
   source: https://orcid.org/0000-0001-8669-7942
 
 - year: 2025
-  details: 'Visited the Centre Automatique et Systèmes at Mines Paris-PSL.'
+  month: Mar
+  date: "2025-03"
+  details: 'Presented “Privacy-preserving flexibility provisioning approaches for enhanced TSO-DSO interaction” at Inno-Forum: Digitale Energiewende, TransnetBW, in Stuttgart.'
+
+- year: 2025
+  details: 'Completed my Ph.D. in Electrical Engineering and Information Technology at KIT, advised by Prof. Veit Hagenmeyer.'
+
+- year: 2025
+  details: 'Spent one month as a visiting researcher at the Centre Automatique et Systèmes, Mines Paris-PSL, working with Prof. François Pacaud.'
+
+- year: 2025
+  details: 'Gave an invited seminar on cooperative decision-making in power-system operations at Mines Paris-PSL, hosted by Prof. François Pacaud.'
+
+- year: 2025
+  details: 'Began research on “Towards an Annual Transmission Outlook,” funded by Clean Grid Initiative, developing maximum-loadability screening and GPU-based Benders decomposition for energy-system planning (2025–2026).'
+
+- year: 2025
+  details: 'Began mentoring Princeton undergraduate researcher Daniel Vergara on fast maximum-loadability screening using transversality (2025–2026).'
 
 - year: 2025
   details: 'Published [advances in distributed AC optimal power flow for integrated transmission-distribution systems](https://doi.org/10.1109/TNSE.2025.3526206) in *IEEE Transactions on Network Science and Engineering*.'
+
+- year: 2025
+  details: 'Our paper on [enhanced flexibility aggregation using LinDistFlow with loss compensation](https://doi.org/10.1109/PowerTech59965.2025.11180670) appeared in the proceedings of IEEE PowerTech.'
+
+- year: 2025
+  details: 'Our paper on [Shapley-value-based cost allocation for battery energy storage in power grids with a high share of renewables](https://doi.org/10.1145/3679240.3734664) appeared in the proceedings of ACM e-Energy.'
 
 - year: 2024
   month: Dec
@@ -66,3 +117,71 @@
   date: "2024-06"
   details: 'Presented work on transmission-distribution coordination at the 23rd Power Systems Computation Conference in Paris.'
   source: https://pscc2024.fr/wp-content/uploads/2024/05/2406_PSCC_Brochure-v12.pdf
+
+- year: 2024
+  details: 'Began co-mentoring doctoral researcher Yanlin Jiang at KIT with Prof. Veit Hagenmeyer on sensitivity-based model reduction and acceleration for nonlinear power systems.'
+
+- year: 2024
+  details: 'Mentored Zhuojun Cai’s master’s research in computer science at KIT.'
+
+- year: 2023
+  month: Dec
+  date: "2023-12"
+  details: 'Received KIT’s Annual Performance Bonus for Outstanding Performance and Personal Commitment.'
+  # Award year is in the CV; December was confirmed by the author.
+
+- year: 2023
+  month: Dec
+  date: "2023-12"
+  details: 'Presented “Hypergraph-based fast distributed AC power flow optimization” at the 62nd IEEE Conference on Decision and Control in Singapore.'
+  source: https://cdc2023.ieeecss.org/
+
+- year: 2023
+  month: Apr
+  date: "2023-04"
+  details: 'Gave an [invited seminar on distributed optimization in the electric power system](https://www.syscop.de/event/distributed-optimization-electric-power-system) at the University of Freiburg, hosted by Prof. Moritz Diehl.'
+
+- year: 2023
+  details: 'Spent eight months as a visiting researcher in the Systems Control and Optimization Laboratory at the University of Freiburg, working with Prof. Moritz Diehl.'
+
+- year: 2023
+  details: 'Began research on the BMBF-funded ENSURE II project with industry partner Hitachi Energy, developing scalable optimization methods for integrated transmission-distribution systems (2023–2025).'
+
+- year: 2023
+  details: 'Mentored Zhehao Ma’s master’s research and began mentoring Yanlin Jiang’s master’s research at KIT; the latter continued through 2024.'
+
+- year: 2022
+  month: Jul
+  date: "2022-07"
+  details: 'Presented “Rapid scalable distributed power flow with open-source implementation” at the 9th IFAC Conference on Networked Systems (NECSYS) in Zurich.'
+  source: https://www.ifac-control.org/conferences/networked-systems-9th-necsys-2022
+
+- year: 2022
+  details: 'Gave an invited seminar on data-preserving calculations using distributed Gauss-Newton algorithms at TransnetBW in Stuttgart, hosted by Dr. Jochen Bammert.'
+
+- year: 2022
+  details: 'Began serving as co-PI of a €150,000 TransnetBW-funded project on distributed Shapley values for redispatch cost allocation, coordinating research and leading technical reporting in German (2022–2023).'
+
+- year: 2022
+  details: 'Began guest lecturing in *Energy Informatics II* at KIT, teaching nonlinear programming and optimization methods for power systems through 2024.'
+
+- year: 2022
+  details: 'Mentored Yichen Cai’s master’s research at KIT.'
+
+- year: 2021
+  details: 'Began my Ph.D. in Electrical Engineering and Information Technology at KIT, advised by Prof. Veit Hagenmeyer.'
+
+- year: 2020
+  details: 'Completed a four-month research internship in the Division of Network Economy & Digitalization at TransnetBW in Stuttgart, advised by Dr. Jochen Bammert.'
+
+- year: 2020
+  details: 'Received Second Prize in the National College New Energy Vehicle Big Data Application Innovation Competition.'
+
+- year: 2020
+  details: 'Completed my M.Sc. in Automation and Information at KIT.'
+
+- year: 2019
+  details: 'Joined KIT’s Institute for Automation and Applied Informatics as a research assistant, working with Dr. Tillmann Mühlpfordt (2019–2020).'
+
+- year: 2019
+  details: 'Began research on the BMBF-funded MOReNet project with industry partner TransnetBW, developing distributed Gauss-Newton methods for power-flow computation (2019–2021).'

@@ -18,8 +18,8 @@
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
-    {% if author.employer %}<p class="author__institution"><i class="fas fa-fw fa-building-columns" aria-hidden="true"></i><span>{{ author.employer }}</span></p>{% endif %}
-    {% if author.location %}<p class="author__location"><i class="fas fa-fw fa-location-dot" aria-hidden="true"></i><span>{{ author.location }}</span></p>{% endif %}
+    {% if author.employer %}<p class="author__institution">{{ author.employer }}</p>{% endif %}
+    {% if author.location %}<p class="author__location">{{ author.location }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
@@ -30,7 +30,7 @@
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+        <li><a class="author__email" href="mailto:{{ author.email | escape }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i><span>{{ author.email | escape | replace: '@', '<wbr>@' }}</span></a></li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
