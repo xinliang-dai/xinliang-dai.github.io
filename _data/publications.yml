@@ -2,8 +2,10 @@
 # Published years refer to the final journal issue or conference year.
 # Working-paper years refer to the first public arXiv version.
 # Set selected to true to include an entry on the publications page.
+# Set featured to true to also highlight an entry on the homepage.
 
 - id: r3
+  featured: true
   category: working
   selected: true
   title: "DistFlow and Its Conic Relaxation: Regularity, Monotonicity, and Hybrid Exactness via Graph Decomposition"
@@ -14,6 +16,7 @@
   arxiv: "https://arxiv.org/abs/2610.41220"
 
 - id: r1
+  featured: true
   category: working
   selected: true
   title: "Distributed coordination for transmission-distribution systems with nonlinear flexibility aggregation"
@@ -28,6 +31,7 @@
   arxiv: "https://arxiv.org/abs/2608.06341"
 
 - id: r5
+  featured: true
   category: working
   selected: true
   title: "Analyzing Performance and Scalability of Benders Decomposition for Generation and Transmission Expansion Planning Models"
@@ -93,6 +97,7 @@
   source_url: "https://publikationen.bibliothek.kit.edu/1000183390"
 
 - id: j2
+  featured: true
   selected: true
   category: journal
   title: "Advancing distributed AC optimal power flow for integrated transmission-distribution systems"

@@ -1,4 +1,6 @@
-{% assign publications = site.data.publications | where: 'selected', true | where: 'category', include.category %}
+{% assign publications = site.data.publications | where: 'selected', true %}
+{% if include.category %}{% assign publications = publications | where: 'category', include.category %}{% endif %}
+{% if include.featured %}{% assign publications = publications | where: 'featured', true %}{% endif %}
 <ol class="publication-list{% unless include.category == 'working' %} publication-list--compact{% endunless %}">
   {% for paper in publications %}
   <li class="publication" id="{{ paper.id }}">
