@@ -32,15 +32,16 @@ html[data-theme="dark"] {
   outline-offset: 4px;
 }
 
-.author__content .author__bio { margin: 0.6rem 0 0.25rem; }
-.author__content .author__institution { margin: 0 0 0.2rem; }
-.author__content .author__location { margin: 0; font-size: 0.7em; line-height: 1.5; }
 .author__content .author__bio,
 .author__content .author__institution,
 .author__content .author__location {
   display: block;
+  margin: 0 0 0.25rem;
+  font-size: 0.75em;
+  line-height: 1.5;
   font-weight: 400;
 }
+.author__content .author__bio { margin-top: 0.6rem; }
 .author__urls-wrapper { margin-top: 1rem; }
 .author__urls a,
 .author__urls .author__email {
