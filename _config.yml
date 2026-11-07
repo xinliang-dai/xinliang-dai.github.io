@@ -10,6 +10,7 @@
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Xinliang Dai"
+masthead_title           : "Xinliang"
 title_separator          : "-"
 name                     : &name "Xinliang Dai"
 description              : &description "Xinliang Dai - optimization and computation for networked energy systems"
@@ -26,7 +27,7 @@ author:
   avatar           : "bio-photo.jpeg"
   name             : "Xinliang Dai"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoctoral Research Associate working on optimization for energy systems"
+  bio              : "Postdoctoral Research Associate"
   location         : "Princeton, NJ 08540, USA"
   employer         : "Princeton University"
   uri              : # URL

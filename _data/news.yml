@@ -1,0 +1,68 @@
+# Shared by the home page and /news/. Add a month only when it is known.
+# Within a year, dated items are newest first; year-only items follow them.
+- year: 2026
+  month: Aug
+  date: "2026-08"
+  featured: true
+  details: 'Gave an [invited seminar at AI4OPT, Georgia Tech](https://www.ai4opt.org/news-events/ai4opt-seminar-series-xinliang-dai), on scalable distributed strategies for nonlinear optimization in power systems.'
+
+- year: 2026
+  month: Jul
+  date: "2026-07"
+  featured: true
+  details: 'Our work on [distributed convex second-order optimization for AC/DC hybrid distribution systems](https://doi.org/10.1109/TPWRS.2026.3658172) appeared in *IEEE Transactions on Power Systems*.'
+  source: https://www.research-collection.ethz.ch/entities/publication/bdb035ba-2248-4f07-a681-e86097903c71
+
+- year: 2026
+  month: Feb
+  date: "2026-02"
+  featured: true
+  details: 'Gave an [invited talk at The Hong Kong Polytechnic University](https://www.polyu.edu.hk/eee/news-and-events/events/2026/2026-02-03-research-talk-on-distributed-optimization-frameworks-for-large-scale-nonlinear/) on distributed optimization frameworks for large-scale nonlinear programming in power systems.'
+
+- year: 2026
+  month: Jan
+  date: "2026-01"
+  details: 'Our work on [optimal BESS management for peak load shaving and battery health](https://doi.org/10.1109/TSTE.2025.3586064) appeared in *IEEE Transactions on Sustainable Energy*.'
+  source: https://publikationen.bibliothek.kit.edu/1000183390
+
+- year: 2026
+  details: 'Gave an invited seminar at Argonne National Laboratory on fast maximum-loadability screening for data center interconnections.'
+
+- year: 2026
+  details: 'Gave invited seminars at HKU, CUHK, CityU, CUHK-Shenzhen, and HKUST(GZ) on distributed optimization in power systems.'
+
+- year: 2026
+  details: 'Served on the Posters Track Program Committee for ACM e-Energy.'
+
+- year: 2026
+  details: 'Accepted to present work on DistFlow regularity, monotonicity, and hybrid exactness in San Francisco.'
+
+- year: 2025
+  month: Sep
+  date: "2025-09"
+  details: 'Our work on [low-carbon energy management for networked multi-energy microgrids](https://doi.org/10.1016/j.segan.2025.101821) appeared in *Sustainable Energy, Grids and Networks*.'
+
+- year: 2025
+  month: Jun
+  date: "2025-06"
+  featured: true
+  details: 'Joined Princeton University’s ZERO Lab as a Postdoctoral Research Associate.'
+  source: https://orcid.org/0000-0001-8669-7942
+
+- year: 2025
+  details: 'Visited the Centre Automatique et Systèmes at Mines Paris-PSL.'
+
+- year: 2025
+  details: 'Published [advances in distributed AC optimal power flow for integrated transmission-distribution systems](https://doi.org/10.1109/TNSE.2025.3526206) in *IEEE Transactions on Network Science and Engineering*.'
+
+- year: 2024
+  month: Dec
+  date: "2024-12"
+  details: 'Co-organized the invited session “Optimization and Control in Energy System Management” at the IEEE Conference on Decision and Control.'
+  source: https://css.paperplaza.net/images/temp/CDC/CDC24_ContentListMedia_3.html
+
+- year: 2024
+  month: Jun
+  date: "2024-06"
+  details: 'Presented work on transmission-distribution coordination at the 23rd Power Systems Computation Conference in Paris.'
+  source: https://pscc2024.fr/wp-content/uploads/2024/05/2406_PSCC_Brochure-v12.pdf

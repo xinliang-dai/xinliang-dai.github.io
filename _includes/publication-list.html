@@ -1,0 +1,22 @@
+{% assign publications = site.data.publications | where: 'category', include.category %}
+<ol class="publication-list">
+  {% for paper in publications %}
+  <li class="publication" id="{{ paper.id }}">
+    <h3 class="publication__title">{{ paper.title | escape }}</h3>
+    {% assign author_count = paper.authors | size %}
+    {% if author_count > 4 %}
+      {% assign short_authors = paper.authors | slice: 0, 3 %}
+      <details class="publication__authors">
+        <summary>
+          <span class="publication__authors-preview">{% if short_authors contains site.author.name %}{% include publication-authors.html authors=short_authors %}<span class="publication__more">, and {{ author_count | minus: 3 }} more authors</span>{% else %}{% assign first_authors = paper.authors | slice: 0, 2 %}{% include publication-authors.html authors=first_authors %}, …, <strong>{{ site.author.name | escape }}</strong><span class="publication__more"> · all {{ author_count }} authors</span>{% endif %}</span>
+          <span class="publication__less">Hide full author list</span>
+        </summary>
+        <div class="publication__authors-full">{% include publication-authors.html authors=paper.authors %}</div>
+      </details>
+    {% else %}
+      <p class="publication__authors">{% include publication-authors.html authors=paper.authors %}</p>
+    {% endif %}
+    <p class="publication__meta"><em>{{ paper.venue | escape }}</em>, {{ paper.year }}<span class="publication__links">{% if paper.arxiv %}<a href="{{ paper.arxiv }}" aria-label="arXiv version of {{ paper.title | escape }}">[arXiv]</a>{% endif %} {% if paper.doi %}<a href="{{ paper.doi }}" aria-label="Published version of {{ paper.title | escape }}">[DOI]</a>{% endif %}</span></p>
+  </li>
+  {% endfor %}
+</ol>

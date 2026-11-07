@@ -7,7 +7,7 @@ author_profile: true
 ## Conference organization
 
 - Program Committee Member, Posters Track, 17th ACM International Conference on Future and Sustainable Energy Systems (ACM e-Energy), 2026.
-- Organizer, invited session "Optimization and Control in Energy Systems," 63rd IEEE Conference on Decision and Control, 2024.
+- Co-organizer, invited session "Optimization and Control in Energy System Management," 63rd IEEE Conference on Decision and Control, 2024.
 
 ## Journal reviewing
 

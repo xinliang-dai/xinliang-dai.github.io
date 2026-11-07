@@ -1,86 +1,50 @@
-/*
-* Greedy Navigation
-*
-* http://codepen.io/lukejacksonn/pen/PwmwWV
-*
-*/
-
+/* Right-aligned navigation with an accessible overflow menu on small screens. */
 var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
-var $vlinks = $('#site-nav .visible-links');
-var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
-var $hlinks = $('#site-nav .hidden-links');
+var $btn = $nav.children('button');
+var $vlinks = $nav.children('.visible-links');
+var $hlinks = $nav.children('.hidden-links');
+var $tail = $vlinks.children('.tail');
 
-var breaks = [];
-
-function updateNav() {
-
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
-
-  // The visible list is overflowing the nav
-  if ($vlinks.width() > availableSpace) {
-
-    while ($vlinks.width() > availableSpace && $vlinks.children("*:not(.persist)").length > 0) {
-      // Record the width of the list
-      breaks.push($vlinks.width());
-
-      // Move item to the hidden list
-      $vlinks.children("*:not(.persist)").last().prependTo($hlinks);
-
-      availableSpace = $btn.hasClass("hidden") ? $nav.width() : $nav.width() - $btn.width() - 30;
-
-      // Show the dropdown btn
-      $btn.removeClass("hidden");
-    }
-
-    // The visible list is not overflowing
-  } else {
-
-    // There is space for another item in the nav
-    while (breaks.length > 0 && availableSpace > breaks[breaks.length - 1]) {
-      // Move the item to the visible list
-      if ($vlinks_persist_tail.children().length > 0) {
-        $hlinks.children().first().insertBefore($vlinks_persist_tail);
-      } else {
-        $hlinks.children().first().appendTo($vlinks);
-      }
-      breaks.pop();
-    }
-
-    // Hide the dropdown btn if hidden list is empty
-    if (breaks.length < 1) {
-      $btn.addClass('hidden');
-      $btn.removeClass('close');
-      $hlinks.addClass('hidden');
-    }
-  }
-
-  // Keep counter updated
-  $btn.attr("count", breaks.length);
-
-  // update masthead height and the body/sidebar top padding
-  var mastheadHeight = $('.masthead').height();
-  $('body').css('padding-top', mastheadHeight + 'px');
-  if ($(".author__urls-wrapper button").is(":visible")) {
-    $(".sidebar").css("padding-top", "");
-  } else {
-    $(".sidebar").css("padding-top", mastheadHeight + "px");
-  }
-
+function closeNavigation() {
+  $hlinks.addClass('hidden');
+  $btn.removeClass('close').attr('aria-expanded', 'false');
 }
 
-// Window listeners
+function updateNav() {
+  $nav.addClass('js-nav');
+  // Restore the original order before measuring; widths change with font loading.
+  $hlinks.children().insertBefore($tail);
+  $btn.addClass('hidden');
+  $vlinks.css('width', $nav.width());
+  while ($vlinks[0].scrollWidth > $vlinks[0].clientWidth + 1 &&
+         $vlinks.children(':not(.persist)').length) {
+    $btn.removeClass('hidden');
+    $vlinks.css('width', $nav.width() - $btn.outerWidth() - 16);
+    $vlinks.children(':not(.persist)').last().prependTo($hlinks);
+  }
+  $btn.attr('count', $hlinks.children().length);
+  closeNavigation();
+  var mastheadHeight = $('.masthead').outerHeight();
+  $('body').css('padding-top', mastheadHeight + 'px');
+  document.documentElement.style.setProperty('--site-masthead-height', mastheadHeight + 'px');
+}
 
-$(window).on('resize', function () {
-  updateNav();
-});
-screen.orientation.addEventListener("change", function () {
-  updateNav();
-});
-
+$(window).on('resize', updateNav);
+if (screen.orientation && screen.orientation.addEventListener) {
+  screen.orientation.addEventListener('change', updateNav);
+}
 $btn.on('click', function () {
-  $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
+  var isOpen = $btn.attr('aria-expanded') === 'true';
+  $btn.attr('aria-expanded', String(!isOpen)).toggleClass('close', !isOpen);
+  $hlinks.toggleClass('hidden', isOpen);
 });
-
+$(document).on('keydown', function (event) {
+  if (event.key === 'Escape' && $btn.attr('aria-expanded') === 'true') {
+    closeNavigation();
+    $btn.trigger('focus');
+  }
+}).on('click', function (event) {
+  if (!$nav[0].contains(event.target)) closeNavigation();
+});
 updateNav();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(updateNav);

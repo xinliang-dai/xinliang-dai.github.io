@@ -31,9 +31,6 @@ I received my Ph.D. in Electrical Engineering and Information Technology from th
 
 ## Recent news
 
-- **2026:** Gave invited seminars at Argonne National Laboratory, the AI Institute for Advances in Optimization at Georgia Tech, and universities in Hong Kong and Shenzhen.
-- **2026:** Joined the Posters Track Program Committee for ACM e-Energy.
-- **2026:** Published work on distributed convex second-order optimization for AC/DC hybrid distribution systems in *IEEE Transactions on Power Systems*.
-- **2025:** Joined Princeton University's ZERO Lab as a Postdoctoral Research Associate.
+{% include news-list.html featured=true %}
 
-[See all news](/news/) · [View publications](/publications/) · [Explore talks](/talks/)
+<p class="news-more"><a href="{{ '/news/' | relative_url }}">See all news →</a></p>

@@ -152,6 +152,12 @@ $(document).ready(function () {
 
   // Enable the theme toggle
   $('#theme-toggle').on('click', toggleTheme);
+  $('#theme-toggle a').on('keydown', function (event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      toggleTheme();
+    }
+  });
 
   // Enable the sticky footer
   var bumpIt = function () {
@@ -173,6 +179,7 @@ $(document).ready(function () {
   $(".author__urls-wrapper button").on("click", function () {
     $(".author__urls").fadeToggle("fast", function () { });
     $(".author__urls-wrapper button").toggleClass("open");
+    $(this).attr('aria-expanded', String($(this).hasClass('open')));
   });
 
   // Restore the follow menu if toggled on a window resize

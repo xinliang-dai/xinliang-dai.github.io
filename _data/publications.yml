@@ -1,0 +1,233 @@
+# DOI links lead to the published version; arXiv links are included only when verified.
+# Years refer to the final journal issue or conference year.
+
+- id: j1
+  category: journal
+  title: "Distributed convex second-order optimization for AC/DC hybrid distribution systems within PROcess Orchestration Framework"
+  authors:
+    - Xinliang Dai
+    - Yuning Jiang
+    - Junyi Zhai
+    - Jianlei Liu
+    - Thorsten Schlachter
+    - Colin N. Jones
+    - Xiao-Ping Zhang
+    - Veit Hagenmeyer
+  venue: "IEEE Transactions on Power Systems"
+  year: 2026
+  doi: "https://doi.org/10.1109/TPWRS.2026.3658172"
+  arxiv: "https://arxiv.org/abs/2609.14004"
+
+- id: j3
+  category: journal
+  title: "Optimal BESS management for peak load shaving and battery health under prediction uncertainty"
+  authors:
+    - Lixin Li
+    - Tim Kappler
+    - Bernhard Schwarz
+    - Nina Munzke
+    - Xinliang Dai
+    - Veit Hagenmeyer
+    - Marc Hiller
+  venue: "IEEE Transactions on Sustainable Energy"
+  year: 2026
+  doi: "https://doi.org/10.1109/TSTE.2025.3586064"
+  # Final issue is January 2026; first published online in 2025.
+  source_url: "https://publikationen.bibliothek.kit.edu/1000183390"
+
+- id: j2
+  category: journal
+  title: "Advancing distributed AC optimal power flow for integrated transmission-distribution systems"
+  authors:
+    - Xinliang Dai
+    - Junyi Zhai
+    - Yuning Jiang
+    - Yi Guo
+    - Colin N. Jones
+    - Veit Hagenmeyer
+  venue: "IEEE Transactions on Network Science and Engineering"
+  year: 2025
+  doi: "https://doi.org/10.1109/TNSE.2025.3526206"
+  arxiv: "https://arxiv.org/abs/2308.13282"
+
+- id: j4
+  category: journal
+  title: "Low-carbon energy management for networked multi-energy microgrids using multi-agent soft actor-critic algorithm"
+  authors:
+    - Duanyang Song
+    - Linfang Yan
+    - Xinliang Dai
+    - Xingyang Zhu
+    - Veit Hagenmeyer
+    - Junyi Zhai
+  venue: "Sustainable Energy, Grids and Networks"
+  year: 2025
+  doi: "https://doi.org/10.1016/j.segan.2025.101821"
+  # Final publisher title and author list supersede the earlier CV wording.
+  source_url: "https://www.sciencedirect.com/science/article/abs/pii/S2352467725002036"
+
+- id: j5
+  category: journal
+  title: "Real-time coordination of integrated transmission and distribution systems: Flexibility modeling and distributed NMPC scheduling"
+  authors:
+    - Xinliang Dai
+    - Yi Guo
+    - Yuning Jiang
+    - Colin N. Jones
+    - Gabriela Hug
+    - Veit Hagenmeyer
+  venue: "Electric Power Systems Research"
+  year: 2024
+  doi: "https://doi.org/10.1016/j.epsr.2024.110627"
+  arxiv: "https://arxiv.org/abs/2402.00508"
+
+- id: j6
+  category: journal
+  title: "Ensuring data privacy in AC optimal power flow with a distributed co-simulation framework"
+  authors:
+    - Xinliang Dai
+    - Alexander Kocher
+    - Jovana Kovačević
+    - Burak Dindar
+    - Yuning Jiang
+    - Colin Jones
+    - Hüseyin K. Çakmak
+    - Veit Hagenmeyer
+  venue: "Electric Power Systems Research"
+  year: 2024
+  doi: "https://doi.org/10.1016/j.epsr.2024.110710"
+  arxiv: "https://arxiv.org/abs/2402.01001"
+  source_url: "https://www.sciencedirect.com/science/article/pii/S0378779624005960"
+
+- id: j7
+  category: journal
+  title: "Distributed optimal power flow for VSC-MTDC meshed AC/DC grids using ALADIN"
+  authors:
+    - Junyi Zhai
+    - Xinliang Dai
+    - Yuning Jiang
+    - Ying Xue
+    - Veit Hagenmeyer
+    - Colin N. Jones
+    - Xiao-Ping Zhang
+  venue: "IEEE Transactions on Power Systems"
+  year: 2022
+  doi: "https://doi.org/10.1109/TPWRS.2022.3155866"
+  arxiv: "https://arxiv.org/abs/2203.02796"
+
+- id: j8
+  category: journal
+  title: "Distributed power flow and distributed optimization—Formulation, solution, and open source implementation"
+  authors:
+    - Tillmann Mühlpfordt
+    - Xinliang Dai
+    - Alexander Engelmann
+    - Veit Hagenmeyer
+  venue: "Sustainable Energy, Grids and Networks"
+  year: 2021
+  doi: "https://doi.org/10.1016/j.segan.2021.100471"
+  arxiv: "https://arxiv.org/abs/2011.10322"
+
+- id: c1
+  category: conference
+  title: "Error accumulation using linearized models for aggregating flexibility in distribution systems"
+  authors:
+    - Yanlin Jiang
+    - Xinliang Dai
+    - Frederik Zahn
+    - Yi Guo
+    - Veit Hagenmeyer
+  venue: "IEEE PES International Meeting"
+  year: 2026
+  doi: "https://doi.org/10.1109/PESIM67009.2026.11438889"
+  arxiv: "https://arxiv.org/abs/2508.04382"
+
+- id: c2
+  category: conference
+  title: "Enhanced flexibility aggregation using LinDistFlow model with loss compensation"
+  authors:
+    - Yanlin Jiang
+    - Xinliang Dai
+    - Frederik Zahn
+    - Veit Hagenmeyer
+  venue: "IEEE PowerTech"
+  year: 2025
+  doi: "https://doi.org/10.1109/PowerTech59965.2025.11180670"
+  arxiv: "https://arxiv.org/abs/2505.01715"
+
+- id: c3
+  category: conference
+  title: "Shapley value-based cost allocation for battery energy storage systems in power grids with a high share of renewables"
+  authors:
+    - Rebecca Bauer
+    - Xinliang Dai
+    - Frederik Zahn
+    - Veit Hagenmeyer
+  venue: "ACM e-Energy"
+  year: 2025
+  doi: "https://doi.org/10.1145/3679240.3734664"
+
+- id: c4
+  category: conference
+  title: "Real-time pricing mechanism for V2G using distributed bilevel optimization"
+  authors:
+    - Jiawei You
+    - Xinliang Dai
+    - Yuning Jiang
+    - Haoyu Yin
+    - Yuanming Shi
+    - Colin N. Jones
+  venue: "IEEE Conference on Decision and Control"
+  year: 2024
+  doi: "https://doi.org/10.1109/CDC56724.2024.10886533"
+
+- id: c5
+  category: conference
+  title: "Industrial application of the Shapley value-based redispatch cost allocation to large-scale power grids requires AC optimal power flow"
+  authors:
+    - Rebecca Bauer
+    - Xinliang Dai
+    - Veit Hagenmeyer
+  venue: "IEEE Power & Energy Society General Meeting"
+  year: 2024
+  doi: "https://doi.org/10.1109/PESGM51994.2024.10688852"
+  arxiv: "https://arxiv.org/abs/2405.06439"
+
+- id: c6
+  category: conference
+  title: "Hypergraph-based fast distributed AC power flow optimization"
+  authors:
+    - Xinliang Dai
+    - Yingzhao Lian
+    - Yuning Jiang
+    - Colin N. Jones
+    - Veit Hagenmeyer
+  venue: "IEEE Conference on Decision and Control"
+  year: 2023
+  doi: "https://doi.org/10.1109/CDC49753.2023.10383354"
+  arxiv: "https://arxiv.org/abs/2307.06728"
+  source_url: "https://publikationen.bibliothek.kit.edu/1000168659"
+
+- id: c7
+  category: conference
+  title: "A Shapley value-based distributed AC OPF approach for redispatch congestion cost allocation"
+  authors:
+    - Rebecca Bauer
+    - Xinliang Dai
+    - Veit Hagenmeyer
+  venue: "ACM e-Energy"
+  year: 2023
+  doi: "https://doi.org/10.1145/3575813.3576881"
+
+- id: c8
+  category: conference
+  title: "Rapid scalable distributed power flow with open-source implementation"
+  authors:
+    - Xinliang Dai
+    - Yichen Cai
+    - Yuning Jiang
+    - Veit Hagenmeyer
+  venue: "IFAC Conference on Networked Systems"
+  year: 2022
+  doi: "https://doi.org/10.1016/j.ifacol.2022.07.250"
+  arxiv: "https://arxiv.org/abs/2203.16335"
