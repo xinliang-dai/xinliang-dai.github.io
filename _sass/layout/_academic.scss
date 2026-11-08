@@ -105,7 +105,7 @@ html[data-theme="dark"] {
   flex: 1;
   border-top: 1px solid var(--global-border-color);
 }
-.timeline-year .news-item { grid-template-columns: 4rem minmax(0, 1fr); }
+.timeline-year .news-item { grid-template-columns: 2.4rem minmax(0, 1fr); gap: 0.7rem; }
 .timeline-year .news-item__date { font-weight: 400; }
 
 /* Repeated seminar titles share one row; each stop keeps its own host/date. */
@@ -155,7 +155,7 @@ html[data-theme="dark"] {
   .timeline-index { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .news-list .news-item { grid-template-columns: 4.6rem minmax(0, 1fr); gap: 0.7rem; }
   .news-item__date { font-size: 0.78em; }
-  .timeline-year .news-item { grid-template-columns: 2.6rem minmax(0, 1fr); }
+  .timeline-year .news-item { grid-template-columns: 2rem minmax(0, 1fr); gap: 0.6rem; }
   .timeline-year + .timeline-year { margin-top: 2.2rem; }
   .author__content { padding-right: 0.6rem; }
   .author__content .author__location { max-width: 14rem; }
