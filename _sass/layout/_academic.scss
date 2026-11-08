@@ -114,6 +114,7 @@ html[data-theme="dark"] {
 .page__content .news-item__detail .talk-item__type { margin: 0 0 0.3rem; font-size: 0.75em; letter-spacing: 0.03em; color: var(--global-text-color); }
 .page__content .talk-list .talk-item__title { margin-bottom: 0.2rem; }
 .page__content .talk-venues { list-style: none; padding: 0; margin: 0; }
+.page__content .talk-venues--multiple { margin-top: 0.45rem; padding-left: 0.8rem; border-left: 2px solid var(--global-border-color); }
 .talk-venues .talk-venue { display: block; margin: 0; padding: 0; border: 0; font-size: 1em; line-height: 1.4; }
 .talk-venues--multiple .talk-venue + .talk-venue { margin-top: 0.65rem; }
 .talk-venue__name { margin-bottom: 0.2rem; font-size: 0.86em; font-weight: 400; }
