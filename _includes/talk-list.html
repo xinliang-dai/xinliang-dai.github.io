@@ -14,9 +14,12 @@
       <ul class="talk-venues{% if talk.venues.size > 1 %} talk-venues--multiple{% endif %}">
         {% for venue in talk.venues %}
         <li class="talk-venue">
-          <div class="talk-venue__name">{% if venue.url %}<a href="{{ venue.url }}">{{ venue.institution | escape }}</a>{% else %}{{ venue.institution | escape }}{% endif %}{% if venue.date_label %}<span class="talk-venue__date"> · <time datetime="{{ venue.date }}">{{ venue.date_label }}</time></span>{% endif %}</div>
-          {% if venue.unit or venue.location %}<div class="talk-venue__detail">{{ venue.unit | escape }}{% if venue.unit and venue.location %} · {% endif %}{{ venue.location | escape }}</div>{% endif %}
-          {% if venue.host %}<div class="talk-venue__host">Host: {{ venue.host | escape }}</div>{% endif %}
+          {% if talk.venues.size > 1 or venue.date_label %}<div class="talk-venue__date">{% if venue.date_label %}<time datetime="{{ venue.date }}">{{ venue.date_label }}</time>{% endif %}</div>{% endif %}
+          <div class="talk-venue__content">
+            <div class="talk-venue__name">{% if venue.url %}<a href="{{ venue.url }}">{{ venue.institution | escape }}</a>{% else %}{{ venue.institution | escape }}{% endif %}</div>
+            {% if venue.unit or venue.location %}<div class="talk-venue__detail">{{ venue.unit | escape }}{% if venue.unit and venue.location %} · {% endif %}{{ venue.location | escape }}</div>{% endif %}
+            {% if venue.host %}<div class="talk-venue__host">Host: {{ venue.host | escape }}</div>{% endif %}
+          </div>
         </li>
         {% endfor %}
       </ul>

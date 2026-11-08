@@ -4,6 +4,27 @@
 # Announce publications from 2025 onward; earlier conference entries are talks.
 # Record ongoing appointments, projects, and mentoring at their starting year.
 - year: 2026
+  month: Dec
+  date: "2026-12-09"
+  details: 'Scheduled to give “Two scalable distributed strategies for nonlinear optimization in power systems” at Illinois Institute of Technology’s Department of Computer Science on December 9, hosted by Prof. Minxuan Zhou.'
+
+- year: 2026
+  month: Dec
+  date: "2026-12-08"
+  details: 'Scheduled to give “Two scalable distributed strategies for nonlinear optimization in power systems” at Iowa State University’s Department of Electrical and Computer Engineering on December 8, hosted by Prof. Bai Cui.'
+
+- year: 2026
+  month: Dec
+  date: "2026-12-07"
+  details: 'Scheduled to give “Two scalable distributed strategies for nonlinear optimization in power systems” at Argonne National Laboratory on December 7, hosted by Dr. Feng Qiu.'
+
+- year: 2026
+  month: Nov
+  date: "2026-11"
+  featured: true
+  details: 'Presented work on DistFlow regularity, monotonicity, and hybrid exactness at the [2026 INFORMS Annual Meeting](https://www.informs.org/Meetings-Conferences/INFORMS-Conference-Calendar/2026-INFORMS-Annual-Meeting) in San Francisco.'
+
+- year: 2026
   month: Aug
   date: "2026-08"
   featured: true
@@ -39,9 +60,6 @@
   source: https://publikationen.bibliothek.kit.edu/1000183390
 
 - year: 2026
-  details: 'Gave an invited seminar at Argonne National Laboratory on fast maximum-loadability screening for data center interconnections, hosted by Dr. Feng Qiu.'
-
-- year: 2026
   details: 'Gave an invited seminar at The University of Hong Kong (HKU) on distributed optimization in power systems, hosted by Prof. Tao Liu.'
 
 - year: 2026
@@ -52,9 +70,6 @@
 
 - year: 2026
   details: 'Served on the Posters Track Program Committee for ACM e-Energy.'
-
-- year: 2026
-  details: 'Accepted to present work on DistFlow regularity, monotonicity, and hybrid exactness in San Francisco.'
 
 - year: 2026
   details: 'Our paper on [error accumulation in linearized models for distribution-system flexibility aggregation](https://doi.org/10.1109/PESIM67009.2026.11438889) appeared in the proceedings of the IEEE PES International Meeting.'
@@ -73,7 +88,6 @@
 - year: 2025
   month: Jun
   date: "2025-06"
-  featured: true
   details: 'Joined Princeton University’s ZERO Lab as a Postdoctoral Research Associate.'
   source: https://orcid.org/0000-0001-8669-7942
 

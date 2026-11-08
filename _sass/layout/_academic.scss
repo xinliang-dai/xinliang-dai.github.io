@@ -109,14 +109,18 @@ html[data-theme="dark"] {
 .timeline-year .news-item__date { font-weight: 400; }
 
 /* Repeated seminar titles share one row; each stop keeps its own host/date. */
+.talk-list .talk-item { padding: 0.75rem 0; }
+.talk-list .talk-item:first-child { padding-top: 0.3rem; }
 .page__content .news-item__detail .talk-item__type { margin: 0 0 0.3rem; font-size: 0.75em; letter-spacing: 0.03em; color: var(--global-text-color); }
-.page__content .talk-item__title { margin: 0 0 0.5rem; font-size: 1em; line-height: 1.45; font-weight: 400; }
+.page__content .talk-list .talk-item__title { margin-bottom: 0.2rem; }
 .page__content .talk-venues { list-style: none; padding: 0; margin: 0; }
-.talk-venues .talk-venue { margin: 0; padding: 0; font-size: 0.9em; line-height: 1.5; }
-.talk-venues--multiple .talk-venue { padding: 0.5rem 0 0.5rem 0.8rem; border-left: 2px solid var(--global-border-color); }
-.talk-venue__name { font-weight: 400; }
-.talk-venue__date { font-size: 0.9em; font-weight: 400; white-space: nowrap; }
-.talk-venue__detail, .talk-venue__host { font-size: 0.93em; }
+.talk-venues .talk-venue { margin: 0; padding: 0; border: 0; font-size: 1em; line-height: 1.4; }
+.talk-venues--multiple .talk-venue { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 0.65rem; }
+.talk-venues--multiple .talk-venue + .talk-venue { margin-top: 0.65rem; }
+.talk-venue__content { min-width: 0; }
+.talk-venue__name { margin-bottom: 0.2rem; font-size: 0.86em; font-weight: 400; }
+.talk-venue__date { font-size: 0.82em; font-weight: 400; white-space: nowrap; }
+.talk-venue__detail, .talk-venue__host { font-size: 0.82em; }
 
 /* Three-line bibliography: title, authors, venue/year with inline links. */
 .page__content .publication-list { list-style: none; padding: 0; margin: 0; }
@@ -127,7 +131,8 @@ html[data-theme="dark"] {
 .page__content .publication-list--compact .publication__title { margin-bottom: 0.2rem; }
 .page__content .publication-list--compact .publication__authors { margin-bottom: 0.2rem; line-height: 1.4; }
 .page__content .publication-list--compact .publication__meta { line-height: 1.4; }
-.page__content .publication__title {
+.page__content .publication__title,
+.page__content .talk-item__title {
   margin: 0 0 0.35rem;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.1em;

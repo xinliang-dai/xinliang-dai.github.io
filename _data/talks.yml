@@ -3,12 +3,26 @@
 # Months are included only where verified; otherwise date contains the year only.
 - category: invited
   year: 2026
-  title: "Fast maximum loadability screening for data center interconnections via AC feasibility recovery"
-  date: "2026"
+  month: Dec
+  date: "2026-12-09"
+  title: "Two scalable distributed strategies for nonlinear optimization in power systems"
+  status: Upcoming invited seminars
   venues:
     - institution: Argonne National Laboratory
+      date_label: Dec 7
+      date: "2026-12-07"
       unit: Advanced Grid Modeling, Optimization and Analytics group
       host: Dr. Feng Qiu
+    - institution: Iowa State University
+      date_label: Dec 8
+      date: "2026-12-08"
+      unit: Department of Electrical and Computer Engineering
+      host: Prof. Bai Cui
+    - institution: Illinois Institute of Technology
+      date_label: Dec 9
+      date: "2026-12-09"
+      unit: Department of Computer Science
+      host: Prof. Minxuan Zhou
 
 - category: invited
   year: 2026
@@ -28,18 +42,18 @@
   date: "2026"
   venues:
     - institution: The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)
-      date_label: Jan 26, 2026
+      date_label: Jan 26
       date: "2026-01-26"
       host: Prof. Li Qiu
       url: https://ssemsc.cuhk.edu.cn/event/268
     - institution: The Hong Kong Polytechnic University (PolyU)
-      date_label: Feb 3, 2026
+      date_label: Feb 3
       date: "2026-02-03"
       url: https://www.polyu.edu.hk/eee/news-and-events/events/2026/2026-02-03-research-talk-on-distributed-optimization-frameworks-for-large-scale-nonlinear/
       host: Prof. Siqi Bu
     - institution: City University of Hong Kong (CityU)
       unit: Department of Data Science
-      date_label: Feb 4, 2026
+      date_label: Feb 4
       date: "2026-02-04"
       host: Prof. Zijun Zhang
       url: https://www.ds.cityu.edu.hk/news-event/seminars/2526-semb/distributed-optimization-frameworks-for-large-scale-nonlinear-programming-in-power-systems
@@ -84,10 +98,13 @@
 - category: conference
   year: 2026
   title: "DistFlow and its conic relaxation: regularity, monotonicity, and hybrid exactness via graph decomposition"
-  date: "2026"
-  status: Accepted presentation
+  month: Nov
+  date: "2026-11"
+  status: Presented
   venues:
-    - institution: San Francisco
+    - institution: INFORMS Annual Meeting
+      location: San Francisco, CA
+      url: https://www.informs.org/Meetings-Conferences/INFORMS-Conference-Calendar/2026-INFORMS-Annual-Meeting
 
 - category: conference
   year: 2025
