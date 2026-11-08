@@ -1,6 +1,7 @@
 # A talk can have several venues; keep each venue's date and host with that venue.
 # Hosts are confirmed by the CV, official event pages, or the author.
 # Months are included only where verified; otherwise date contains the year only.
+# Add slides with a /assets/slides/... path when a deck is available for that event.
 - category: invited
   year: 2026
   month: Dec
@@ -29,6 +30,7 @@
   month: Aug
   date: "2026-08"
   title: "Two scalable distributed strategies for nonlinear optimization in power systems"
+  slides: /assets/slides/Presentation_Georgia_20260810.pdf
   venues:
     - institution: Georgia Institute of Technology
       unit: AI Institute for Advances in Optimization (AI4OPT)
@@ -101,6 +103,7 @@
   month: Nov
   date: "2026-11"
   status: Presented
+  slides: /assets/slides/INFORMS2026_Xinliang_v4.pdf
   venues:
     - institution: INFORMS Annual Meeting
       location: San Francisco, CA

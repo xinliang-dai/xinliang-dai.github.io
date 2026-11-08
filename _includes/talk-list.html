@@ -10,7 +10,7 @@
     <div class="news-item__date"><time{% unless talk.month %} class="visually-hidden"{% endunless %} datetime="{{ talk.date }}">{% if talk.month %}{{ talk.month }}{% else %}{{ talk.year }}{% endif %}</time></div>
     <div class="news-item__detail">
       <p class="talk-item__type">{% if talk.category == 'invited' %}Invited seminar{% if talk.venues.size > 1 %}s{% endif %}{% else %}Conference presentation{% endif %}{% if talk.status and talk.status != 'Presented' %} · {{ talk.status | escape }}{% endif %}</p>
-      <h3 class="talk-item__title">{{ talk.title | escape }}</h3>
+      <h3 class="talk-item__title">{{ talk.title | escape }}{% if talk.slides %} <a class="talk-item__slides" href="{{ talk.slides | relative_url }}" type="application/pdf" aria-label="Slides for {{ talk.title | escape }}">[link]</a>{% endif %}</h3>
       <ul class="talk-venues{% if talk.venues.size > 1 %} talk-venues--multiple{% endif %}">
         {% for venue in talk.venues %}
         <li class="talk-venue">
