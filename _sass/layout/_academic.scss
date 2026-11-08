@@ -114,12 +114,10 @@ html[data-theme="dark"] {
 .page__content .news-item__detail .talk-item__type { margin: 0 0 0.3rem; font-size: 0.75em; letter-spacing: 0.03em; color: var(--global-text-color); }
 .page__content .talk-list .talk-item__title { margin-bottom: 0.2rem; }
 .page__content .talk-venues { list-style: none; padding: 0; margin: 0; }
-.talk-venues .talk-venue { margin: 0; padding: 0; border: 0; font-size: 1em; line-height: 1.4; }
-.talk-venues--multiple .talk-venue { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 0.65rem; }
+.talk-venues .talk-venue { display: block; margin: 0; padding: 0; border: 0; font-size: 1em; line-height: 1.4; }
 .talk-venues--multiple .talk-venue + .talk-venue { margin-top: 0.65rem; }
-.talk-venue__content { min-width: 0; }
 .talk-venue__name { margin-bottom: 0.2rem; font-size: 0.86em; font-weight: 400; }
-.talk-venue__date { font-size: 0.82em; font-weight: 400; white-space: nowrap; }
+.talk-venue__date { font-size: 0.95em; font-weight: 400; white-space: nowrap; }
 .talk-venue__detail, .talk-venue__host { font-size: 0.82em; }
 
 /* Three-line bibliography: title, authors, venue/year with inline links. */

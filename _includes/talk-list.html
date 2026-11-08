@@ -9,17 +9,14 @@
   <li class="news-item talk-item">
     <div class="news-item__date"><time{% unless talk.month %} class="visually-hidden"{% endunless %} datetime="{{ talk.date }}">{% if talk.month %}{{ talk.month }}{% else %}{{ talk.year }}{% endif %}</time></div>
     <div class="news-item__detail">
-      <p class="talk-item__type">{% if talk.status %}{{ talk.status | escape }}{% elsif talk.category == 'invited' %}Invited talk{% else %}Presentation{% endif %}</p>
+      <p class="talk-item__type">{% if talk.category == 'invited' %}Invited seminar{% if talk.venues.size > 1 %}s{% endif %}{% else %}Conference presentation{% endif %}{% if talk.status and talk.status != 'Presented' %} · {{ talk.status | escape }}{% endif %}</p>
       <h3 class="talk-item__title">{{ talk.title | escape }}</h3>
       <ul class="talk-venues{% if talk.venues.size > 1 %} talk-venues--multiple{% endif %}">
         {% for venue in talk.venues %}
         <li class="talk-venue">
-          {% if talk.venues.size > 1 or venue.date_label %}<div class="talk-venue__date">{% if venue.date_label %}<time datetime="{{ venue.date }}">{{ venue.date_label }}</time>{% endif %}</div>{% endif %}
-          <div class="talk-venue__content">
-            <div class="talk-venue__name">{% if venue.url %}<a href="{{ venue.url }}">{{ venue.institution | escape }}</a>{% else %}{{ venue.institution | escape }}{% endif %}</div>
-            {% if venue.unit or venue.location %}<div class="talk-venue__detail">{{ venue.unit | escape }}{% if venue.unit and venue.location %} · {% endif %}{{ venue.location | escape }}</div>{% endif %}
-            {% if venue.host %}<div class="talk-venue__host">Host: {{ venue.host | escape }}</div>{% endif %}
-          </div>
+          <div class="talk-venue__name">{% if venue.url %}<a href="{{ venue.url }}">{{ venue.institution | escape }}</a>{% else %}{{ venue.institution | escape }}{% endif %}{% if venue.date_label %}<span class="talk-venue__date"> · <time datetime="{{ venue.date }}">{{ venue.date_label }}</time></span>{% endif %}</div>
+          {% if venue.unit or venue.location %}<div class="talk-venue__detail">{{ venue.unit | escape }}{% if venue.unit and venue.location %} · {% endif %}{{ venue.location | escape }}</div>{% endif %}
+          {% if venue.host %}<div class="talk-venue__host">Host: {{ venue.host | escape }}</div>{% endif %}
         </li>
         {% endfor %}
       </ul>
